@@ -14,7 +14,6 @@ export async function GET(request: NextRequest) {
   //
   // KV Example:
   try {
-    // @ts-ignore
     const myKv = getRequestContext().env.MY_KV_NAMESPAC
     // await myKv.put('suffix', ' from a KV store!')
     const suffix = await myKv.get('suffix')
